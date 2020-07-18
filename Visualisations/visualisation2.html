@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Visualisation 2</title>
+
+  <link rel="stylesheet" href="styles/vis2.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round">
+  <script src="http://d3js.org/d3.v5.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+  <script src="./scripts/vis2/continentMapper.js"></script>
+  <script src="./scripts/vis2/parser.js"></script>
+  <script src="./scripts/vis2/rightBar.js"></script>
+  <script src="./scripts/vis2/main.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="title">
+      World Population Without Basic Drinking Services
+    </div>
+    <div id="buttons">
+      <div id="toolbar-left">
+        <div id="undo">
+          <a><i class="material-icons-round md-dark inline-icons">undo</i> Undo</a>
+        </div>
+        <div id="redo">
+          <a><i class="material-icons-round md-dark inline-icons">redo</i> Redo</a>
+        </div>
+      </div>
+      <div id="nav">
+        <div id="vis1-nav">
+            <a href="index.html">Visualisation<i class="material-icons-round md-dark inline-icons">looks_one</i></a>
+        </div>
+        <div id="vis2-nav" class="nav-selected">
+            <a>Visualisation<i class="material-icons-round md-dark inline-icons">looks_two</i></a>
+        </div>
+      </div>
+      <div id="toolbar-right">
+        <div id="download">
+          <a><i class="material-icons-round md-dark inline-icons">save_alt</i> Export Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="left-sidebar">
+      <h3>Filter by continent</h3>
+      <div id="continent-selection-panel"></div>
+    </div>
+    <div id="middle-content">
+      <div id="vis">
+      </div>
+      <div id="slider">
+        <!-- ==================== Legend Business -->
+          <div class="legend">
+            <span class="legendimage"><img src="images/legendvis2.png" style="width:132px;height:233px;"></span>
+          </div>          
+        <!-- ==================== -->
+        <!-- ==================== Slider Business -->
+        <div class="slidecontainer">
+          <input type="range" min="2000" max="2018" value="2009" class="slider" id="yearSlider">
+        </div>
+        <!-- ==================== -->
+        <div id="yearDisplay"></div>
+      </div>
+    </div>
+    <div id="right-sidebar">
+      <div id="right-sidebar-header"><h3>Select a country</h3></div>
+      <div id="right-sidebar-body"></div>
+    </div>
+  </div>
+  <div id="footer">
+      <div>Data sourced from the <a href="https://unstats.un.org/sdgs/indicators/database/" target="_blank">United Nations Sustainable Development Goals (SDG) Indicators database</a></div>
+      <div>Visualisations made by Andrew Thompson, Chintan Patel, Daniel Young, Deacon McIntyre, Maegan Kennedy and Tomas Brown using <a href="https://d3js.org/" target="_blank">D3.js</a>.</div>  
+  </div>
+</body>
