@@ -5,8 +5,8 @@ The United Nations Sustainable Development Goals data set provides information a
 
 Our visualisation system consists of two separate but related visualisations, both of which are developed using Mike Bostock’s Data-Driven Documents (D3) library. The first visualisation displays the proportion of a country’s population which is living below the poverty line. 
 
-![Visualisation 1](http://url/to/img.png)
+![Visualisation 1](https://raw.githubusercontent.com/andythomnz/Data-Visualisation---Global-Development/master/Screenshots/visualisation-1.png) <!-- .element height="50%" width="50%" -->
 
 The second visualisation displays the proportion of a country’s population without access to basic drinking services (clean water).
 
-![Visualisation 2](http://url/to/img.png)
+![Visualisation 2](https://raw.githubusercontent.com/andythomnz/Data-Visualisation---Global-Development/master/Screenshots/visualisation-2.png) <!-- .element height="50%" width="50%" -->
